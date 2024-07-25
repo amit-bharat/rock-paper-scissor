@@ -14,17 +14,17 @@ function getComputerChoice(){
 }
 
 //function to get user input
+// let user_input;
 function getHumanChoice(){
-    let user_input=prompt('Enter input from  "rock" "paper" or "scissors"');
-    user_input=user_input.toLowerCase();  //make input case-insensitive
+    let user_input=prompt('Enter input from  "rock" "paper" or "scissors"').toLowerCase();
     if(user_input ==="rock" || user_input==="paper" || user_input==="scissors"){
         return user_input;
     }
     else{
         console.log("user enter a wrong choice, Enter correct choice again");
-        getHumanChoice();
+        return getHumanChoice();
     }
-        
+      
     }
 
  //function to play a round of game
